@@ -220,6 +220,7 @@ decode_preR13_section_hdr (const char *restrict name, Dwg_Section_Type_r11 id,
                  (size_t)(tbl->address + (tbl->number * tbl->size)),
                  dat->size);
       // VPORT.size bug in DWG, ignore it.
+      tbl->size = 0;
       return id == SECTION_VPORT ? 0 : 1;
     }
   return 0;
