@@ -10587,7 +10587,7 @@ static __nonnull ((1, 2, 3, 4)) Dxf_Pair *new_object (
               break;
             }
           // fall through
-        case 341:
+        case 331:
           if (pair->code == 341 && strEQc (name, "VIEWPORT"))
             {
               Dwg_Entity_VIEWPORT *o = obj->tio.entity->tio.VIEWPORT;
